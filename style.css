@@ -1,0 +1,293 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/*
+	HEADER
+*/
+a,p,li {
+	text-decoration: none;
+	font-family: 'Advent Pro', sans-serif;
+	font-size: 20px;
+}
+
+h1 {
+	font-family: 'Julius Sans One', sans-serif;
+
+}
+
+header {
+	height: 100px;
+	position: absolute;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    width: 100%;
+}
+
+.header-img {
+	background-image: url('https://logodix.com/logo/1664083.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 100px;
+	width: 100px;
+	grid-column: 2;
+}
+
+#menu-resp {
+	display: none;
+	margin: 5px;
+}
+
+.header-menu {
+	grid-column: 5/8;
+}
+
+.header-menu {
+	position: absolute;
+	top: 50px;
+}
+
+.header-menu a {
+	padding: 1vw;
+	margin: 0.5vw;
+	color: white
+}
+
+.header-menu a:hover {
+	background-color: #fff;
+	color: black; 
+	transition: 0.5s;
+}
+/*
+	MAIN
+*/
+
+main {
+	display: grid;
+	grid-template-columns: repeat(8,1fr);
+}
+
+
+.main-section {
+	position: relative;
+	top: 0;
+	grid-column: 1/9;
+}
+
+.main-section {
+	background-image: url(https://images.pexels.com/photos/1552252/pexels-photo-1552252.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+    height: 100vh;
+    background-size: cover;
+}
+
+.main-section div {
+	display: inline-grid;
+	background-color: white;
+	border-radius: 5px;
+	transform: translateY(200%);
+	top: 0;
+}
+
+.main-section div img {
+	width: 30px;
+	padding: 5px;
+}
+
+.main-section img {
+	width: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.main-section h1 {
+	transform: translateY(50%);
+	position: absolute;
+	top: 50%;
+	left: 40vw;
+	font-size: 7vh;
+	color: white;
+	font-family: 'Julius Sans One', sans-serif;
+}
+
+.main-aboutus {
+	grid-column: 2/8;
+}
+
+.main-aboutus h1 {
+	text-align: center;
+	margin: 5vw;
+	font-family: 'Julius Sans One', sans-serif;
+}
+
+.main-aboutus p {
+	margin: 5vw; 
+}
+
+.main-infra {
+	grid-column: 1/9;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr  1fr 1fr;
+	background-color: #272727;
+}
+
+.main-infra div {
+	grid-column: 3;
+	text-align: center;
+	margin: 10px;
+	padding: 10px;
+}
+
+.main-infra p,h2{
+	color: white;
+	font-family: 'Advent Pro', sans-serif;
+}
+
+.main-infra h1 {
+	grid-column: 1/9;
+	text-align: center;
+	color: white;
+	margin: 50px 0;
+}
+
+.main-infra img {
+	width: 100%;
+}
+
+#main1 {
+	grid-column: 2/3;
+}
+
+#main2 {
+	grid-column: 3/4;
+}
+
+#main3 {
+	grid-column: 4/5;
+}
+
+
+
+.main-mid h1 {
+	color: white;
+	text-align: center;
+	transform: translateY(500%);
+}
+
+
+.main-mid {
+	background-image: url('https://images.pexels.com/photos/949131/pexels-photo-949131.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+	grid-column: 1/9;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 50vh;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.main-planos {
+	grid-column: 2/8;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.main-planos h1 {
+	grid-column: 1/4;
+	text-align: center;
+	margin: 50px;
+}
+
+.main-planos div {
+	text-align: center;
+	box-shadow: 11px 10px 17px #b3b3b3;
+	padding: 20px;
+	margin: 10px;
+}
+
+footer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
+
+footer div {
+	height: auto;
+    grid-column: 1;
+    border-radius: solid 1px black;
+    text-align: center;
+}
+
+footer div img {
+	width: 100%;
+}
+
+footer div:nth-child(3) {
+	grid-column: 2/3;
+}
+
+footer div a {
+	display: block;
+	padding: 15px;
+	color: black;
+}
+
+footer h1 {
+	margin: 50px;
+}
+
+@media (max-width: 613px){
+
+	.header-menu {
+		position: absolute;
+		right: 0;
+		top: 0;
+		grid-column: 8;
+	}
+
+	#non-mobile-menu{
+		display: none;
+		position: absolute;
+    	right: 35vw;
+	}
+
+	#menu-resp {
+		display: block;
+		width: 50px;
+		margin: 15px;
+	}
+
+	#menu-resp img {
+		width: 50px;
+	}
+
+	footer div {
+		grid-column: 1/3;
+	}
+
+	footer div:nth-child(3) {
+		grid-column: 1/3;
+	}
+	.header-menu a {
+		padding: 20px;
+	}
+	.main-planos {
+		display: block;
+		grid-column: 1/9;
+	}
+
+	.main-planos div {
+
+	}
+
+	.main-infra {
+		display:block;
+	}
+}
